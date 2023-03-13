@@ -40,11 +40,11 @@ public class StepsForHomePage {
         driver.get("https://www.statefarm.com/");
     }
 
-    @When("user select homeowners from product dropdown")
-    public void user_select_auto_from_product_dropdown() {
+    @When("user select {string} from product dropdown")
+    public void user_select_auto_from_product_dropdown(String product) {
 //        Select select = new Select(driver.findElement(By.id("popDropdown")));
 //        select.selectByVisibleText("Homeowners");
-        commonAPI.selectElement(driver, By.id("popDropdown"), "Homeowners");
+        commonAPI.selectElement(driver, By.id("popDropdown"), product);
     }
 
     @When("user enters zipcode in the input field")

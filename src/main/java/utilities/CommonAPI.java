@@ -37,4 +37,9 @@ public class CommonAPI {
         Select select = new Select(driver.findElement(locator));
         select.selectByVisibleText(visibleText);
     }
+
+    public String getTextMethod(WebDriver driver, By locator) {
+        String getText = driver.findElement(locator).getText();
+        return getText;
+    }
 }
