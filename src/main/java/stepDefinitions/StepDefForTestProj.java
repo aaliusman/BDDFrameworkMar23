@@ -18,20 +18,10 @@ public class StepDefForTestProj extends CommonAPI {
     WebDriver driver = null;
     WebDriverInitiate webDriverInitiate = new WebDriverInitiate();
 
-
-    @Before
-    public void browserSetup() {
-        driver = webDriverInitiate.initiateWebDriver();
-        driver.get("https://example.testproject.io/web/");
-    }
-
-    @After
-    public void tearDown () {
-        driver.close();
-    }
-
     @Given("user enters {string} and {string} in the input field")
     public void user_enters_and_in_the_input_field(String user, String password) throws InterruptedException {
+        driver = webDriverInitiate.initiateWebDriver();
+        driver.get("https://example.testproject.io/web/");
         enterText(driver, By.id("name"), user);
         enterText(driver, By.id("password"), password);
     }
@@ -44,5 +34,6 @@ public class StepDefForTestProj extends CommonAPI {
         String expectedMessage = "Hello " +user+ ", let's complete the test form:";
        String actualMessage = getTextMethod(driver, By.id("greetings"));
         Assert.assertEquals(actualMessage, expectedMessage);
+        driver.close();
     }
 }

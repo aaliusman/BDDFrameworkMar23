@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import driver.WebDriverInitiate;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -25,12 +26,11 @@ public class StepsForHomePage {
     String expectedCityName = "LANGHORNE";
 
     CommonAPI commonAPI = new CommonAPI();
+    WebDriverInitiate  webDriverInitiate = new WebDriverInitiate();
 
     public void initiateWebDriver() {
-//        WebDriverManager.firefoxdriver().setup();
-//        driver = new FirefoxDriver();
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = webDriverInitiate.initiateWebDriver();
 
     }
 
@@ -40,11 +40,11 @@ public class StepsForHomePage {
         driver.get("https://www.statefarm.com/");
     }
 
-    @When("user select {string} from product dropdown")
-    public void user_select_auto_from_product_dropdown(String product) {
+    @When("user select Homeowners from product dropdown")
+    public void user_select_auto_from_product_dropdown() {
 //        Select select = new Select(driver.findElement(By.id("popDropdown")));
 //        select.selectByVisibleText("Homeowners");
-        commonAPI.selectElement(driver, By.id("popDropdown"), product);
+        commonAPI.selectElement(driver, By.id("popDropdown"), "Homeowners");
     }
 
     @When("user enters zipcode in the input field")
