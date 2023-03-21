@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-21T14:53:43 EDT" name="All Test Suite" finished-at="2023-03-21T14:54:31 EDT" duration-ms="48196">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestProjRunner@2794eab6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HomePageRunner@548d708a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-21T14:53:43 EDT" name="Runner two" finished-at="2023-03-21T14:54:05 EDT" duration-ms="21806">
+      <class name="runner.HomePageRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.HomePageRunner@548d708a]" started-at="2023-03-21T14:53:43 EDT" name="setUpClass" finished-at="2023-03-21T14:53:44 EDT" duration-ms="926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6933b6c6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HomePageRunner@548d708a]" started-at="2023-03-21T14:53:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-21T14:54:05 EDT" duration-ms="20688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user is able to save info"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test homepage functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.HomePageRunner@548d708a]" started-at="2023-03-21T14:54:05 EDT" name="tearDownClass" finished-at="2023-03-21T14:54:05 EDT" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.HomePageRunner -->
+    </test> <!-- Runner two -->
+    <test started-at="2023-03-21T14:53:43 EDT" name="BDD Framework" finished-at="2023-03-21T14:54:31 EDT" duration-ms="48195">
+      <class name="runner.TestProjRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestProjRunner@2794eab6]" started-at="2023-03-21T14:53:43 EDT" name="setUpClass" finished-at="2023-03-21T14:53:44 EDT" duration-ms="926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7bbc8656]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestProjRunner@2794eab6]" started-at="2023-03-21T14:53:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-21T14:54:15 EDT" duration-ms="31438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user is able to login successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestProjRunner@2794eab6]" started-at="2023-03-21T14:54:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-21T14:54:31 EDT" duration-ms="15722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate multiple users are able to login successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestProjRunner@2794eab6]" started-at="2023-03-21T14:54:31 EDT" name="tearDownClass" finished-at="2023-03-21T14:54:31 EDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestProjRunner -->
+    </test> <!-- BDD Framework -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

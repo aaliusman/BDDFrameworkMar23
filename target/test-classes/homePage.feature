@@ -1,15 +1,6 @@
-Feature: State farm home page
+Feature: Test homepage functionality
 
-  Scenario: Validate zipcode matches with city
-    Given navigate to statefarm homepage
-    When user select Homeowners from product dropdown
-    And user enters zipcode in the input field
-    And user clicks start a quote button
-    Then user verifies city matches with zipcode
+  Scenario: Validate user is able to save info
+    Given user enters "abcde" and "12345" in the input field
+    When user clicks on login button
 
-  Scenario: Validate zipcode matches with city
-    Given navigate to statefarm homepage
-    When user select Homeowners from product dropdown
-    And user enters zipcode in the input field
-    And user clicks start a quote button
-    Then user verifies city matches with zipcode

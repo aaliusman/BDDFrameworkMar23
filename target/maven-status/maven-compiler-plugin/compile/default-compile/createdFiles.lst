@@ -1,1 +1,10 @@
-org\example\Main.class
+pages\InsurancePage.class
+stepDefinitions\StepsForHomePage.class
+runner\HomePageRunner.class
+pages\BankingPage.class
+pages\HomePage.class
+stepDefinitions\StepDefForTestProj.class
+pages\QuotationPage.class
+utilities\CommonAPI.class
+runner\TestProjRunner.class
+driver\WebDriverInitiate.class

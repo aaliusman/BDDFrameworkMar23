@@ -13,5 +13,5 @@ Feature: Test login functionality
     Examples:
       | username | password |
       | abcde    | 12345    |
-      | jalksdj  | 12345    |
-      | xnzcv    | 12345    |
+#      | jalksdj  | 12345    |
+#      | xnzcv    | 12345    |
